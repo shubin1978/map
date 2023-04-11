@@ -1,8 +1,27 @@
-//
-// Created by shubi on 08.04.2023.
-//
 
-#ifndef MAP_FILE_PHONEBOOK_H
-#define MAP_FILE_PHONEBOOK_H
+#pragma once
 
-#endif //MAP_FILE_PHONEBOOK_H
+#include <string>
+#include <map>
+
+using namespace std;
+
+void Insert(map<string, string>& phoneBook, string phone, string name){
+    //TODO реализовать функцию
+}
+void UpdateName(map<string, string>& phoneBook, string phone, string name){
+    //TODO реализовать функцию
+}
+void UpdatePhone(map<string, string>& phoneBook, string phone, string name){
+    //TODO реализовать функцию
+}
+void Delete(map<string, string>& phoneBook, string phone, string name){
+    //TODO реализовать функцию
+}
+
+string FindByPhone(map<string, string>& phoneBook,string name){
+    //TODO реализовать функцию
+}
+map<string,string> FindByName(map<string, string>& phoneBook,string name){
+    //TODO реализовать функцию
+}
