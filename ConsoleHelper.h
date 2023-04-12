@@ -5,5 +5,7 @@
 using namespace std;
 
 void ShowAll(map<string, string>& phoneBook){
-    //TODO реализовать функцию
+    for(auto item : phoneBook){
+        cout << item.first << " : " << item.second << endl;
+    }
 }

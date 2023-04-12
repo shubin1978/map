@@ -9,13 +9,11 @@
 
 using namespace std;
 
-
-
-
-
 int main() {
 
+    map<string, string> phoneBook = ImportFromFile("export.psv");
 
+    ShowAll(phoneBook);
 
     return 0;
 }
