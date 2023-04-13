@@ -15,20 +15,43 @@ int main() {
     ShowAll(phoneBook);
     cout << "---" << endl;
 
-    Insert(phoneBook,"D", "DD");
+    UpdateName(phoneBook,"L","SS");
     ShowAll(phoneBook);
     cout << "---" << endl;
 
-    UpdateName(phoneBook,"C","CC");
+    UpdateName(phoneBook,"K","SS");
     ShowAll(phoneBook);
     cout << "---" << endl;
 
-    Delete(phoneBook,"B");
+    map<string,string> Name = FindByName(phoneBook,"AA");
+    for (auto item : Name){
+        cout << item.first << " : " << item.second << endl;
+    }
+    cout << "---" << endl;
+
+
+    UpdatePhone(phoneBook,"C", "CC", "G");
     ShowAll(phoneBook);
     cout << "---" << endl;
 
-    auto name = FindByPhone(phoneBook,"D");
-    cout << name << endl;
+    Insert(phoneBook,"F","FF");
+    ShowAll(phoneBook);
+    cout << "---" << endl;
+
+    Delete(phoneBook,"F");
+    ShowAll(phoneBook);
+    cout << "---" << endl;
+
+    auto name1 = FindByPhone(phoneBook,"K");
+    cout << name1 << endl;
+    cout << "---" << endl;
+
+    auto name2 = FindByPhone(phoneBook,"N");
+    cout << name2 << endl;
+    cout << "---" << endl;
+
+
+   // ExportToFile("export.psv", phoneBook);
 
     return 0;
 }

@@ -11,7 +11,9 @@ map<string, string> ImportFromFile(string path){
     map<string, string> result;
     ifstream file;
     file.open(path);
-
+    if (!file.is_open()) {
+        std::cerr << "Error: Failed to open file !" << endl;
+    }
     string  line;
     while (getline(file,line)){
         int position = line.find('|');
