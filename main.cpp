@@ -50,8 +50,10 @@ int main() {
     cout << name2 << endl;
     cout << "---" << endl;
 
-
-   // ExportToFile("export.psv", phoneBook);
+    auto result = FindByName(phoneBook,"AA");
+    for(auto item : result){
+        cout << item.first << " : " << item.second << endl;
+    }
 
     return 0;
 }
